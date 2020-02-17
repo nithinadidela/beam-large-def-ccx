@@ -14,7 +14,7 @@ The  simulation is tested with CalculiX 2.15 in a machine running Ubuntu 18.04.
 * h = 147.8 mm m
 * t = 100 mm
 
-* For elements 10*2*2 and 20*2*2
+* Number of elements 10*2*2
 
 * E = 100 MPa
 * ν = 0

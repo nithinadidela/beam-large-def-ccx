@@ -1,0 +1,32 @@
+*include,input=all.msh
+*include,input=fix.nam
+*include,input=load.nam
+
+*material,name=steel
+*elastic
+1.E8,0
+
+*solidsection,material=steel,elset=Eall
+
+*boundary
+Nfix,1
+Nfix,2
+Nfix,3
+
+**
+*RESTART,WRITE,FREQUENCY=2
+*STEP , NLGEOM      ,INC=25
+*STATIC
+0.05 ,     1.0
+LARGE ROTATION ANALYSIS
+*cload
+Nload,2,12.82619047619
+*nodeprint,nset=Nall
+u
+*elprint,elset=Eall
+S
+*nodefile
+u
+*elfile
+s
+*endstep
